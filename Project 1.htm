@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project 1</title>
+    <style>
+        body {
+            background-image: url('Toy Story Clouds.jpg');
+            background-size: cover;
+        }
+        #glcanvas {
+            position: absolute;
+            margin: auto;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            text-align: center;
+            width: 80%;
+            height: 80%;
+            overflow: auto;
+            background-color: white;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: rgb(82, 166, 203);
+        }
+    </style>
+</head>
+<body>
+    <div id = "glcanvas">
+        <h1 style = "color: rgb(82, 166, 203);">Project 1 - Around the World</h1>
+        <h2 style = "color: rgb(82, 166, 203);">Introduction</h2>
+        <h3 style = "color: rgb(82, 166, 203);">Project Description</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">Suppose, in the future, rather than, for example, 
+            purchasing a snow globe as a momento of an attraction once visited, one could instead 
+            acquire a virtual knickknack that utilizes Augmented Reality (AR). Capable of displaying 
+            the time and weather of the chosen locations in real-time, the two knickknacks of Project 
+            1 are representative of the Bill Cipher Statue in Reedsport, Oregon and Pixar Animation 
+            Studios in Emeryville, California.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Attractions.png" alt = "Attractions" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">Included below are two photos of the 
+            project's AR knickknacks representing the same attractions mentioned above. The image on 
+            the left is the Bill Cipher Statue in Reedsport, Oregon and the image on the right is Pixar 
+            Animation Studios in Emeryville, California. This is how they appear in the view of the camera 
+            when the project is running.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "AR Attractions.png" alt = "AR Attractions" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <h3 style = "color: rgb(82, 166, 203);">How To Use the Application</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">In order to use the application, one must 
+            first download the project from GitHub and install the necessary software. Instructions are 
+            included below in the section titled "Instructions to Build and Run". Assuming the 
+            instructions have been followed and completed, one should print out and assemble a Merge Cube 
+            and a Class Cube. The following is a zip file containing the cubes:</p>
+        <a href = "https://www.evl.uic.edu/aej/428/CubesForVuforia.zip" style = "color: rgb(82, 166, 203);">Merge Cube and Class Cube Zip File</a>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">When the project is open in Unity, 
+            pressing the Play button should access the web camera of the laptop. Holding the Merge 
+            Cube in the view of the camera should allow the user to see the Reedsport, Oregon 
+            knickknack overlayed on the physical cube. Similarly, carrying the Class Cube in 
+            the camera's view should allow them to see the Emeryville, California knickknack. It 
+            follows the movement of the physical cube including its rotation. The four sides of the 
+            knickknack display the attraction name, a relevant logo, and the time and weather of 
+            the actual locations.</p>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">Flipping the cubes upside down changes the knickknack's light 
+            conditions. Flipping the Reedsport, Oregon knickknack enables a red light that is similar to 
+            that of burning fire. Flipping the Emeryville, California knickknack turns Luxo Jr., the Pixar 
+            lamp, on and shines a spotlight on the Luxo ball and the seagull from Finding Nemo (2003) just as it does at the real location at night. 
+            Flipping the cubes over again returns the lighting conditions to their defaults. This functionality 
+            is demonstrated in the images below.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Lighting.png" alt = "Lighting" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+
+
+        <h2 style = "color: rgb(82, 166, 203);">Instructions to Build and Run</h2>
+        <h3 style = "color: rgb(82, 166, 203);">Downloading Project from GitHub</h1>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">To begin, download the project from the following link by 
+            clicking on the green button that says "Code" and selecting "Download ZIP":</p>
+        <a href = "https://github.com/FarahKamleh/Kamleh.Farah.Project1" style = "color: rgb(82, 166, 203);">FarahKamleh/Kamleh.Farah.Project1</a>
+        <div class = "row">
+            <div class = "column">
+                <img src = "GitHub.png" alt = "GitHub" style = "width: 95%; height: 95%; padding: 5px;">
+            </div>
+        </div>
+        <h3 style = "color: rgb(82, 166, 203);">Installing Unity and Unity Hub</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">Extract the ZIP file as needed. The next step is to install Unity. To do 
+            so, go to https://unity.com and select the blue "Get Started" button at the top. Select the "Individual" tab and click on another 
+            blue "Get started" button underneath "Personal". Download Unity Hub for your preferred platform. Install Unity Hub which will host 
+            your Unity projects. In Unity Hub, click on "Installs" then "Install Editor" to install a new Unity version. This project uses 
+            version 2021.3.6f1. Visit the download archive at https://unity3d.com/get-unity/download/archive and select Unity 2021.x to find 
+            the correct version. Install using Unity Hub. It should then appear there. Open the project by pressing the "Open" button in "Projects".</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Unity Hub Installs.png" alt = "Unity Hub Installs" style = "width: 95%; height: 95%; padding: 5px;">
+            </div>
+        </div>
+        <h3 style = "color: rgb(82, 166, 203);">Installing Vuforia</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">Register for a Vuforia account at https://developer.vuforia.com. Download 
+            Vuforia 10.9 from https://developer.vuforia.com/downloads/sdk. Select "Add Vuforia Engine to a Unity Project or upgrade to the 
+            latest version". Follow the steps at https://library.vuforia.com/getting-started/getting-started-vuforia-engine-unity to add 
+            Vuforia Engine 10.9 to a Unity Project. The most vital steps are to select Assets -> Import Package -> Custom Package -> Import. 
+            Because Vuforia adds its own camera, delete the Main Camera in the Scene Hierarchy. A Vuforia App License key must be added to 
+            the Vuforia Configuration window in Unity in order for the project to track the cubes. To do so, go to the Vuforia developer 
+            site, then click on Develop / License Manager / Get Development Key. This creates a new license key. Return to Unity and add the 
+            key through Window / Vuforia Configuration.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Unity Game View.png" alt = "Unity Game View" style = "width: 95%; height: 95%; padding: 5px;">
+            </div>
+        </div>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">With the project now ready, press the Play button in Unity and carry the cubes in 
+            front of the web camera to observe the project in action.</p>
+
+
+        <h2 style = "color: rgb(82, 166, 203);">Included Assets</h2>
+        <h3 style = "color: rgb(82, 166, 203);">Images of Assets</h3>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Assets.png" alt = "Assets" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">The images included above showcase all 
+            of the physical assets used for the knickknacks. They will be referenced in the sections below. The red numbers 
+            are for the list of downloaded assets while the green numbers are for the student-made assets.</p>
+        <h3 style = "color: rgb(82, 166, 203);">Downloaded Assets</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">The following is a list of all the assets that 
+            have been downloaded from the internet as well as their sources and credits. Included are short 
+            descriptions of how each relate to the requirements of the project.</p>
+        <ol type = "1">
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Finding Nemo Seagull: This model, titled "Dory's Reef HD - Seagull", was created by Here's 
+                Annoying Orange. It can be found here: https://sketchfab.com/3d-models/dorys-reef-hd-seagull-a9948e60b45d47c6847e52e588119a23.
+                It serves as the first of the three downloaded models of a single knickknack (Emeryville, California).</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">White Umbrella: This model, titled "White outdoor Umbrella", was created by 
+                Ngo.Phuoc.Truong. It can be found here: https://sketchfab.com/3d-models/white-outdoor-umbrella-d6c9705a4f8e421ea473196ab9910088. 
+                It serves as the second of the three downloaded models of a single knickknack (Emeryville, California).</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Luxo Jr.: This model, titled "Luxo_Pixar", was created by TadenStar.
+                It can be found here: https://sketchfab.com/3d-models/luxo-pixar-3c5f5973f6f74bbd981c4412fcee965b.
+                It serves as the third of the three downloaded models of a single knickknack (Emeryville, California).</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Bill Cipher: This model, titled "Bill Cipher", was created by Snicks. It can be found 
+                here: https://sketchfab.com/3d-models/bill-cipher-38161efdb5ab45dcb8279f591c0f90aa. 
+                It serves as the first of the three downloaded models of a single knickknack (Reedsport, Oregon).</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Fern: This model, titled "Fern", was created by evolveduk. It can be found here: 
+                https://sketchfab.com/3d-models/fern-38531afd86434987b1a0bf5968fe001f. It serves as the second of the three downloaded models of a 
+                single knickknack (Reedsport, Oregon).</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Fire: This model, titled "Fire Animation", was created by Sebastian Valla. 
+                It can be found here: https://sketchfab.com/3d-models/fire-animation-fc890bebb4ba44dcb900d50658af123f. 
+                It serves as the third of the three downloaded models of a single knickknack (Reedsport, Oregon).</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Bill Cipher Laugh: This audio, titled "Bill Cipher Laugh Ringtone", was created 
+                by @reshmi. It can be found here: https://mobcup.net/ringtone/bill-cipher-laugh-gyehz5uy. It serves as the ambient sound of 
+                one of the knickknacks (Reedsport, Oregon).</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Luxo Jr. Hopping: This audio, titled "Pixar Theme Ringtone", was created by 
+                @topcup. It can be found here: https://mobcup.net/ringtone/pixar-theme-jpux3l1a. It serves as the ambient sound of 
+                one of the knickknacks (Emeryville, California).</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Gravity Falls Theme: This audio, titled "Gravity Falls Theme Song", can be 
+                found here: https://bestringtoness.com/gravity-falls-theme-song.html#google_vignette. While not a requirement, it was included as 
+                an addition to the Reedsport, Oregon knickknack because a looping audio of Bill Cipher laughing might be considered annoying.</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Gravity Falls Logo: This logo serves as the fourth side of the Reedsport, Oregon cube. It 
+                can be found here: https://1000logos.net/gravity-falls-logo/.</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Pixar Logo: This logo serves as the fourth side of the Emeryville, California cube. 
+                It can be found here: https://logos.fandom.com/wiki/Pixar_Animation_Studios/Other.</li>
+        </ol>
+        <h3 style = "color: rgb(82, 166, 203);">Student-Made Assets</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">The following list is of all of the models created by me. It should be noted that they have all been created in Unity.</p>
+        <ol type = "1">
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Tree: The tree model included in the Reedsport, Oregon knickknack was created by me. 
+                It has been painted brown. It serves as the first of two student-made models for a single knickknack.</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Leaves: The leaves floating in the air near Bill Cipher 
+                in the Reedsport, Oregon knickknack were also created by me. There are three of them in the scene. They serve as the second of two student-made models.</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Luxo Ball: The Luxo ball in the Emeryville, California knickknack was created by me. Although just a sphere, 
+                the texture was difficult to make. I have attempted over twenty textures in order to replicate that of the original Luxo ball to no avail. 
+                The version included in the project was the best of them, although still not accurate. It serves as the first of two student-made models for a single knickknack.</li>
+            <li style = "color: rgb(82, 166, 203); text-align: left;">Soccer Goal: The soccer goal located on the Emeryville, California knickknack was created by me 
+                as well as its texture/material. It serves as the second of two student-made models for a single knickknack.</li>
+        </ol>
+
+
+        <h2 style = "color: rgb(82, 166, 203);">Representing the Attractions</h2>
+        <h3 style = "color: rgb(82, 166, 203);">Bill Cipher Statue - Reedsport, Oregon</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">In the side-by-side comparison below, the left image includes Alex Hirsch, the creator of Gravity Falls (2012), 
+            kneeling beside the Bill Cipher Statue the knickknack on the right intends to represent.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Oregon Representation.png" alt = "Oregon Representation" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">The model of Bill Cipher stands in place of the statue itself. Behind him is a 
+            tree model similar to the one behind the actual statue. Because it has been placed in a forest in Reedsport, Oregon, a tree is included on the knickknack. 
+            Similarly, a model of a fern has been placed underneath Bill; in the left image, ferns can be seen sprouting from the ground. The leaves falling from the tree are 
+            indicitive of the leaves all over the floor. Although not representing the fictional location of Gravity Falls, the Gravity Falls logo is placed on the cube's front
+            surface because Bill Cipher is the main antagonist of the series.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Fire Comparison.png" alt = "Fire Comparison" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">Capable of conjuring blue fire, a fire model has been included on the knickknack. Unlike Bill's, the fire 
+            model is red rather than blue. This is because it was the default color of the downloaded model. When the knickknack is turned upside down, the red flames illuminate.</p>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">As the knickknack is being carried in the view of a webcamera, two audio tracks play. The first is of Bill Cipher 
+            laughing and the second is the Gravity Falls theme. The latter plays on a loop while the former only plays when the knickknack is brought back within view. This is because 
+            a looping track of laughter may be considered annoying.</p>
+        <h3 style = "color: rgb(82, 166, 203);">Pixar Animation Studios - Emeryville, California</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">The side-by-side comparison below shows the front of the Pixar Animation Studios building in Emeryville, California on the left and the 
+            knickknack representing it on the right.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "California Representation.png" alt = "California Representation" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">The model of Luxo Jr., the Pixar lamp, serves as a replica of the massive statue found at the front entrace of 
+            Pixar Animation Studios. It faces a similarly large statue of the Luxo ball; therefore, a model of the Luxo ball has been placed in front of the Luxo Jr. model on the knickknack. 
+            In the photo included above, if one were to zoom in, they could see a soccer goal in the grass. There is a soccer field located on the campus. This is why a model of a soccer 
+            goal has been included. The large white umbrella is representative of the patios found near the entrance. They can be seen in the image at the top of the webpage. The image on the 
+            cube's forth surface is one of the logos for Pixar Animation Studios. The last physical model is of a seagull from Finding Nemo (2003). It has been included because a statue of the 
+            bird sits atop the building. Extremely tiny, it can be seen in the photo above. Below is a close-up:</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Seagull.jpg" alt = "Seagull" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">At night, the Luxo Jr. lamp turns on and shines a spotlight on the Luxo ball. This is why, when the cube is flipped upside down, the 
+            Luxo Jr. lamp turns on.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Luxo Jr. Night.jpg" alt = "Luxo Jr. Night" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">Lastly, the looping audio included is that of the Pixar intro: the sound of Luxo Jr. hopping towards the letter I in the Pixar 
+            name and gleefully pouncing atop it.</p>
+
+
+        <h2 style = "color:rgb(82, 166, 203);">YouTube Video</h2>
+        <iframe width="90%" height="90%" src="https://www.youtube.com/embed/qwJD9kYxUsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">In the case that there are any issues with the way the YouTube video is embedded on the webpage, the link is also provided here: https://youtu.be/qwJD9kYxUsQ</p>
+
+
+        <h2 style = "color:rgb(82, 166, 203);">Discussion</h2>
+        <h3 style = "color: rgb(82, 166, 203);">Potential Popularity</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">The given prompt questions whether or not AR objects such as the knickknacks created in this project will become popular in several 
+            years when, for example, AR-enhanced eye wear is commonplace. In the case of this project, one of the advantages an AR knickknack has over a real, physical knickknack, such as a snow 
+            globe, is that it cannot be physically destroyed or damaged. However, it can be argued that, similarly, it can eventually be "lost" when programs and/or software become outdated or even abandoned. To 
+            conclude that AR objects embedded in the real world will not be popular based on the disadvantage just presented does not take into account previous patterns of active human interaction and participation with AR.
+            Take, for instance, the sudden boom in popularity of the 2016 augmented reality mobile game Pokemon Go. It can be strongly argued that it became a cultural phenomenon at launch, garnering 
+            about $207 million in revenue during its first active month. At the time, it became the most downloaded mobile application in a mere twenty days, quickly finding its way to the top of most international 
+            charts. Not only were fans of Pokemon actively playing the game, but also those who may have been unfamiliar with the popular game-series-turned-multi-media-franchise. After it took off, one could find 
+            news article after news article featuring coverage of the game and its popularity. Even today in the year 2022, about six years after its initial release, it still remains active. Therefore, using the popularity 
+            of Pokemon Go as an exemplary case in point, in the instance where AR is utilized in a way that is engaging for the average user, it has the potential to be popular in several years and, as demonstrated, even now.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Pokemon Go.jpg" alt = "Pokemon Go" style = "width: 95%; height: 95%;">
+            </div>
+        </div>
+        <h3 style = "color: rgb(82, 166, 203);">AR-Enhanced Small Objects</h3>
+        <p style = "color: rgb(82, 166, 203); padding: 5px;">As of now, AR, as well as the small objects that are enhanced by the aforementioned mixed environment, are commonly used for entertainment purposes. Like the 
+            example given above, mobile games like Pokemon Go and social media platforms like Snapchat use AR technology to insert a small, interactive character, whether that be a Pokemon or a 3D customized avatar of the user,
+            in the real-world space captured by the camera of a smartphone. Thinking beyond entertainment, small objects enhanced by AR can be beneficial in a classroom setting or even at the gym. For example, rather than having 
+            to carry around an expensive smart watch that may get lost and constantly needs to be charged in order to simply take note of the number of steps taken, one could have an application that utilizes AR to provide vital health information
+            in mere seconds. Suppose that, by simply hovering a smartphone camera in front of a human body, the application can provide the individual's weight and heart rate placed against the captured footage in real-time. Similarly, in a 
+            biology course, by placing a 3D model in the real world, AR can be used to visualize small organisms that otherwise cannot be seen by the human eye. As proposed, there are small objects in the real world that can benefit 
+            from being AR-enhanced.</p>
+
+
+        <h2 style = "color:rgb(82, 166, 203);">Additional Image Sources</h2>
+
+        <h3 style = "color: rgb(82, 166, 203);">Background Source:</h3>
+        <a href = "https://wall.alphacoders.com/big.php?i=333950" style = "color: rgb(82, 166, 203);">Toy Story Wallpaper</a>
+        <h3 style = "color: rgb(82, 166, 203);">Webpage Image Sources:</h3>
+        <a href = "https://themehill.com/gravity-falls-mystery-of-the-bill-cipher-statue-new/" style = "color: rgb(82, 166, 203);">Bill Cipher Statue</a>
+        <div>
+            <a href = "https://www.youtube.com/watch?v=79dOhtRG-ck" style = "color: rgb(82, 166, 203);">Pixar Animation Studios - Angle 1</a>
+        </div>
+        <div>
+            <a href = "https://www.pixar.com/" style = "color: rgb(82, 166, 203);">Pixar Animation Studios - Angle 2</a>
+        </div>
+        <div>
+            <a href = "https://gravityfalls.fandom.com/wiki/Bill_Cipher?file=Cipher_Hunt_Alex_Hirsch_Bill_Cipher_Statue.jpg" style = "color: rgb(82, 166, 203);">Alex Hirsch and Statue</a>
+        </div>
+        <div>
+            <a href = "https://www.adventurersoutpost.com/our-adventures/the-pixar-animation-studios" style = "color: rgb(82, 166, 203);">Finding Nemo Seagull</a>
+        </div>
+        <div>
+            <a href = "https://www.thepositivemom.com/touring-pixar-studios" style = "color: rgb(82, 166, 203);">Luxo Jr. at Night</a>
+        </div>
+        <div>
+            <a href = "https://in.portal-pokemon.com/apps/pokemon_go.html" style = "color: rgb(82, 166, 203);">Pokemon Go</a>
+        </div>
+
+        <h2 style = "color: rgb(82, 166, 203);">Return to Landing Page:</h2>
+        <a href = "index.html" style = "color: rgb(82, 166, 203); padding: 20px;">Farah Kamleh - Landing Page</a>
+    </div>
+</body>
+</html>
