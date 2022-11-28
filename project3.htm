@@ -70,6 +70,31 @@
                     <img src = "The GitHub Image.png" alt = "The GitHub Image" style = "width: 95%; height: 95%; padding: 5px;">
                 </div>
             </div>
+            <h3 style = "color: rgba(196, 42, 44);">Installing Unity and Unity Hub</h3>
+        <p style = "color: rgba(196, 42, 44); padding: 5px;">Extract the ZIP file as needed. The next step is to install Unity. To do 
+            so, go to https://unity.com and select the blue "Get Started" button at the top. Select the "Individual" tab and click on another 
+            blue "Get started" button underneath "Personal". Download Unity Hub for your preferred platform. Install Unity Hub which will host 
+            your Unity projects. In Unity Hub, click on "Installs" then "Install Editor" to install a new Unity version. This project uses 
+            version 2021.3.6f1. Visit the download archive at https://unity3d.com/get-unity/download/archive and select Unity 2021.x to find 
+            the correct version. Install using Unity Hub. It should then appear there. Open the project by pressing the "Open" button in "Projects". 
+            While not required to download and install, it should be noted that the project makes use of VRTK version 4.</p>
+        <div class = "row">
+            <div class = "column">
+                <img src = "Unity Hub Installs.png" alt = "Unity Hub Installs" style = "width: 95%; height: 95%; padding: 5px;">
+            </div>
+        </div>
+        <h3 style = "color: rgba(196, 42, 44);">Building and Running on the Quest</h3>
+        <p style = "color: rgba(196, 42, 44); padding: 5px;">Connect the Quest headset to the laptop using a suitable USB cable. Put on the Quest 
+            headset and use the controllers to tell the Quest to accept the PC connection and always allow that connection. Make sure developer mode is 
+            on. Click on the Quick Settings menu on the left side of the thin menu, then click on the settings menu on the upper right. Next, scroll 
+            down in the menu on the left to Developer and turn on the USB Connection Dialog.</p>
+        <p style = "color: rgba(196, 42, 44); padding: 5px;">In the hierarchy of the Unity project, make sure CameraRigs.UnityXRPluginFramework is 
+            enabled while CameraRigs.SpatialSimulator is disabled. Under Unity Build Settings, make sure you are building for the Android Platform 
+            and the Quest connected shows up under the Run Device list of compatible connected devices. If it does not show up, unplug and re-plug the 
+            USB cable, then tell the Quest to accept the connection to the laptop again. Save the project and restart Unity.</p>
+        <p style = "color: rgba(196, 42, 44); padding: 5px;">Click on Build and Run. It should take about 5 to 10 minutes for Unity to convert 
+            all the assets to a form suitable for the Quest. Disconnect the USB cable from the Quest, put on the Quest headset, and grab the two 
+            controllers. The app should start automatically.</p>
 
             <h2 style = "color:rgba(196, 42, 44);">Additional Image Sources</h2>
             <h3 style = "color: rgba(196, 42, 44);">Background Source:</h3>
