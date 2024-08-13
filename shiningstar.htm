@@ -56,6 +56,11 @@
              space, and UO to rotate them. All functionalities are activated through the standard menu which is revealed by
              pressing the right mouse button. When there, select "Shining Star >" by pressing down on the keyboard or hovering 
              the mouse over the option. Finally, like before, proceed by pressing down on the right mouse button.</p>
+             <div class = "row">
+                <div class = "column">
+                    <img src = "Desktop Constellations.png" alt = "Desktop" style = "width: 95%; height: 95%;">
+                </div>
+            </div>
 
             <h2 style = "color: rgb(16, 20, 28);">Instructions to Build and Run</h2>
             <h3 style = "color: rgb(16, 20, 28);">Cloning Project from GitHub</h1>
@@ -68,7 +73,15 @@
                 </div>
             </div>
             <h3 style = "color: rgb(16, 20, 28);">Installing Git to Clone</h3>
-            <p style = "color: rgb(16, 20, 28); padding: 5px;"></p>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">To download and install Git, navigate to the following webpage and select the option for your device:</p>
+            <a href = "https://git-scm.com/downloads" style = "color: rgb(16, 20, 28);">https://git-scm.com/downloads</a>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">Afterwards, open Git Bash, change the current working directory to the location of interest, and type "git 
+                clone" proceeded by the copied URL. Finally, press the Enter button.</p>
+                <div class = "row">
+                    <div class = "column">
+                        <img src = "Git Clone.png" alt = "Git Clone" style = "width: 95%; height: 95%; padding: 5px;">
+                    </div>
+                </div>
             <h3 style = "color: rgb(16, 20, 28);">Installing Unity and Unity Hub</h3>
             <p style = "color: rgb(16, 20, 28); padding: 5px;">Extract the ZIP file as needed. The next step is to install Unity. To do 
                 so, go to https://unity.com and select the blue "Get Started" button at the top. Select the "Individual" tab and click on another 
@@ -82,9 +95,44 @@
                 </div>
             </div>
 
-            <h2 style = "color: rgb(16, 20, 28);">Temporary Video</h2>
-            <embed width="90%" height="90%" src="https://www.youtube.com/embed/2Delm1YWe7I?si=1uFmWaUOQWEosnYJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></embed>
-            <p style = "color: rgb(16, 20, 28); padding: 5px;">The video above is temporary, as the project is currently behind in development.</p>
+            <h2 style = "color: rgb(16, 20, 28);">Star and Constellation Data</h2>
+            <h3 style = "color: rgb(16, 20, 28);">Datasets</h3>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">The star data was acquired from the ATHYG Database which can be accessed using the following link:</p>
+            <a href = "https://github.com/astronexus/ATHYG-Database" style = "color: rgb(16, 20, 28);">https://github.com/astronexus/ATHYG-Database</a>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">The constellation data, however, was acquired from Stellarium Skycultures which can be found using 
+                the link below. The constellations of interest are "arabic_al-sufi", "arabic_arabian_peninsula", "arabic_indigenous", "arabic_lunar_mansions", "egyptian", 
+                and "modern":</p>
+            <a href = "https://github.com/Stellarium/stellarium/tree/master/skycultures" style = "color: rgb(16, 20, 28);">https://github.com/Stellarium/stellarium/tree/master/skycultures</a>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">Lastly, to implement the color-coding option for exoplants, the NASA Exoplanet Archive was used:</p>
+            <a href = "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS" style = "color: rgb(16, 20, 28);">NASA Exoplanet Archive</a>
+            <h3 style = "color: rgb(16, 20, 28);">Preprocessing</h3>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">For the star data, the "athyg_26_reduced_m10" dataset has been reduced to only contain the columns for HIP, 
+                DIST, X0, Y0, Z0, ABSMAG, MAG, VX, VY, VZ, and SPECT. The SPECT column has been filtered down to the first letter to assist the parser. All rows missing X, 
+                Y, Z, and spectral types have also been removed. Such filtering was accomplished using Jupyter Notebook. An example is included in an image below. To determine 
+                the stellar color scheme, Harvard's spectral classification chart was referenced:</p>
+            <div class = "row">
+                <div class = "column">
+                    <img src = "Stellar Classification.png" alt = "Stellar Classification" style = "width: 95%; height: 95%; padding: 5px;">
+                </div>
+            </div>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">For the constellations, the hipparcos numbers were used to draw each individual line, creating the connections 
+                from star to star. Unfortunately, some sets included HIP numbers that did not appear in the aforementioned star dataset. As a result, the drawing of the constellations at runtime 
+                resulted in many lines being missing. By removing the HIP numbers that did not appear in both datasets, the full constellations appeared.</p>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">Lastly, although mostly filtered using the NASA Exoplanet Archive directly by retaining the HIP ID and number of planets, Jupyter 
+                Notebook was used to drop rows where the HIP ID is null as well as duplicates.</p>
+            <div class = "row">
+                <div class = "column">
+                    <img src = "Jupyter Notebook.png" alt = "Jupyter Notebook" style = "width: 95%; height: 95%; padding: 5px;">
+                </div>
+            </div>
+
+            <h2 style = "color: rgb(16, 20, 28);">Optimizations</h2>
+
+            <h2 style = "color: rgb(16, 20, 28);">Videos</h2>
+            <embed width="90%" height="90%" src="https://www.youtube.com/embed/vH9R6cBWla4?si=P3PN3RFCKiA9y1_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></embed>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">The video above is a live presentation of "Shining Star" as recorded by a professor. 
+                It should be noted that the left and right images are visible because the necessary 3D glasses were not placed in front of the phone's 
+                lens. Additionally, the audio is quite soft.</p>
 
             <h2 style = "color:rgb(16, 20, 28);">Additional Image Sources</h2>
 
