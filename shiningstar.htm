@@ -127,6 +127,14 @@
             </div>
 
             <h2 style = "color: rgb(16, 20, 28);">Optimizations</h2>
+            <p style = "color: rgb(16, 20, 28); padding: 5px;">Because Shining Star works with large datasets, optimization is vital. For example, the number of stars remaining after 
+                preprocessing was 107,868, all of which needed to be present. In order to retain a smooth frame rate, only the stars within close proximity of the user are visualized. 
+                When the user travels, those at a farther distance disappear while new ones are visualized. This ensures that the frame rate does not tank, especially at launch. 
+                Another example in which revisions were necessary was for the functionality that allows the user to start, reverse, and stop time to observe how the position of the 
+                stars and constellations change over time. The first attempt at doing so involved redrawing the stars and constellations at every frame within the Update() function. 
+                While the logic works, the stress of doing so unfortunately, but expectedly, resulted in the application crashing. Therefore, the solution was to introduce a new thread 
+                through the use of an inuemerator function which took care of the re-drawing exclusively. If given more time, another method to increase the frame rate would be to "turn off" the 
+                billboarding of the stars while this functionality is active.</p>
 
             <h2 style = "color: rgb(16, 20, 28);">Videos</h2>
             <embed width="90%" height="90%" src="https://www.youtube.com/embed/zjFOvPO38AY?si=j5wub01AccdqBTLX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></embed>
