@@ -46,12 +46,18 @@
             </div>
             <h3 style = "color:rgba(1, 92, 148, 255);">How to Play</h3>
 
-            <h2 style = "color: rgba(1, 92, 148, 255);">Mechanim Animation</h2>
+            <h2 style = "color: rgba(1, 92, 148, 255);">Mecanim Animation</h2>
             <div class = "row">
                 <div class = "column">
                     <img src = "Mechanim State Machine.png" alt = "Mechanim State Machine" style = "width: 95%; height: 95%;">
                 </div>
             </div>
+            <p style = "color: rgba(1, 92, 148, 255); padding: 5px;">The 3D model of Sonic included a rig and two animations which were running and jumping. Two additional animations 
+                were downloaded from Mixamo.com and applied in Unity which were backwards running and idle stretching. After having acquired all of the "states" of interest, the next step 
+                was ensuring they were properly mapped to the interactions of the player. The transitions can be observed in the state machine above. For example, when the player presses 
+                the space bar, the state will have transitioned to jumping, labeled "sn_ball_loop", from the any of the other states depending on what was last performed by the player. 
+                In the script, this is achieved through the use of the booleans listed under "Parameters" in the top left corner.
+            </p>
 
             <h2 style = "color: rgba(1, 92, 148, 255);">Video</h2>
             <embed width="90%" height="90%" src="https://www.youtube.com/embed/DfTERNI4iFM?si=RV6MNl-HQ05RzdKx" title="YouTube video player" frameborder="0" allow="accelerometer; 
