@@ -34,7 +34,8 @@
             <h3 style = "color: rgb(16, 76, 92);">Project Description</h3>
             <p style = "color: rgb(16, 76, 92);">Death Lives, Life Dies is an original two-player VR game developed for the CAVE2 Hybrid Reality Environment in which 
                 both players share all 88 screens but do not see the same image. This innovative procedure/rule is accomplished by taking advantage of a stereoscopic 
-                shader and giving Player #1, Death, a 2D-R lens configuration and Player #2, Life, a 2D-L lens configuration.
+                shader and giving Player #1, Death, a 2D-R lens configuration and Player #2, Life, a 2D-L lens configuration. In other words, when wearing 3D glasses, 
+                closing only the left eye reveals Player #1's screen and only closing the right eye reveals Player #2's screen.
             </p>
             <div class = "row">
                 <div class = "column">
@@ -84,16 +85,22 @@
                 Ho. In the CAVE2 version, the health bars are anchored to the tracked heads of the players.</p>
 
             <h2 style = "color: rgb(16, 76, 92);">Innovative Procedure/Rule</h2>
+            <p style = "color: rgb(16, 76, 92);">As described in the opening of the page, in order to ensure that both players can use the full 360 degree view of the CAVE2 without peaking at the other 
+                player's screen, a stereoscopic shader has been manipulated to assign the right eye to Player #1 and the left eye to Player #2. This means that, when viewed wearing regular 3D glasses, 
+                the right lens reveals Player #1's screen and the left lens reveals Player #2's screen. As shown in the images below, each player is designated specialized 3D glasses labeled 
+                2D-R and 2D-L. These glasses were modified by swapping lenses so that Player #1 has two right lenses and Player #2 has two left lenses. The retro-reflective markers are intentionally 
+                non-symmetrical and non-identical to ensure that the optical tracking system can recognize and differentiate the players.</p>
             <div class = "row">
                 <div class = "column">
-                    <img src = "CAVE2 Controls.jpg" alt = "CAVE2 Controls" style = "width: 65%; height: 65%; padding: 5px;">
+                    <img src = "CAVE2 Controls.jpg" alt = "CAVE2 Controls" style = "width: 52%; height: 52%; padding: 5px;">
+                    <img src = "Glasses and Wand Labels.jpg" alt = "Glasses and Wand Labels" style = "width: 43%; height: 43%; padding: 5px;">
                 </div>
             </div>
-            <div class = "row">
-                <div class = "column">
-                    <img src = "Glasses and Wand Labels.jpg" alt = "Glasses and Wand Labels" style = "width: 65%; height: 65%; padding: 5px;">
-                </div>
-            </div>
+            <p style = "color: rgb(16, 76, 92);">In Layman's terms, there are two cameras of interest in the developmental scene: the "right eye" and the "left eye". When slightly offset from each other, they create depth which results 
+                in a 3D effect. The left eye, originally slightly offset from Player #1's right eye, is instead transported to the initial position of Player #2 and anchored to Player #2's tracked head with the proper rotation.
+            </p>
+            <p style = "color: rgb(16, 76, 92);">A special thank you to Dr. Arthur Nishimoto is in order for overseeing and assisting with this innovative procedure/rule, 
+                as it took us a total of 11 hours to determine how to successfully implement it.</p>
 
             <h2 style = "color: rgb(16, 76, 92);">How to Use</h2>
             <h3 style = "color: rgb(16, 76, 92);">Download Instructions</h3>
@@ -126,7 +133,8 @@
             <p style = "color: rgb(16, 76, 92); padding: 5px;">For the desktop version, the user traverses the maze using WASD and rotates their perspective 
                 using Q and E. In the CAVE2, the user simply rotates their real, tracked head. To activate a special item, the player presses the up arrow on the 
                 keyboard. To swing the scythe and aim the bow, the user must aim using the cursor of their mouse. To shoot as Life, they must click the left mouse 
-                button. Lastly, to switch from character to character, the tab button should be pressed.
+                button. Lastly, to switch from character to character, the tab button should be pressed. The opposing character presented in third-person is controlled 
+                using IJKL and rotates their direction using U and O.
             </p>
             <div class = "row">
                 <div class = "column">
@@ -152,7 +160,7 @@
             <p style = "color: rgb(16, 76, 92); padding: 5px;">The design document linked below contains additional information regarding the development of Death Lives, Life Dies 
                 such as the project timeline, task distribution, level design, UI design, sound design, beta testing, and alpha testing:
             </p>
-            <a href = "" style = "color: rgb(16, 76, 92);">Death Lives, Life Dies Design Document</a>
+            <a href = "./Death Lives, Life Dies Design Document.pdf" style = "color: rgb(16, 76, 92);">Death Lives, Life Dies Design Document</a>
 
             <h2 style = "color: rgb(16, 76, 92);">Asset Credits</h2>
             <h3 style = "color: rgb(16, 76, 92);">3D Models</h3>
