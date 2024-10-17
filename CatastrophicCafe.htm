@@ -68,13 +68,6 @@
                 of resources in the fridges that can be carried and exchanged across the counter.
             </p>
 
-            <h2 style = "color: rgb(84, 52, 45);">Networking</h2>
-            <div class = "row">
-                <div class = "column">
-                    <img src = "Multiplayer Networking.png" alt = "Multiplayer Networking" style = "width: 95%; height: 95%; padding: 5px;">
-                </div>
-            </div>
-
             <h2 style = "color: rgb(84, 52, 45);">How to Use</h2>
             <h3 style = "color: rgb(84, 52, 45);">Cloning Project From GitHub</h3>
             <p style = "color: rgb(84, 52, 45); padding: 5px;">To begin, clone the project from the following link by 
@@ -120,6 +113,22 @@
                 the order is completed and appears in front of the customer, the order disappears when clicked and adds one point to the score. A temporary work-around, clicking 
                 the title of an ingredient will result in its appearance within the basket underneath.
             </p>
+
+            <h2 style = "color: rgb(84, 52, 45);">Networking</h2>
+            <h3 style = "color: rgb(84, 52, 45);">Netcode for Game Objects</h3>
+            <p style = "color: rgb(84, 52, 45);">Cat-astrophic Cafe uses Netcode for GameObjects which is a high-level networking Unity library to help abstract networking logic. 
+                It allows for the sending of GameObjects and other data across a networking session to many players at once.
+            </p>
+            <div class = "row">
+                <div class = "column">
+                    <img src = "Multiplayer Networking.png" alt = "Multiplayer Networking" style = "width: 95%; height: 95%; padding: 5px;">
+                </div>
+            </div>
+            <h3 style = "color: rgb(84, 52, 45);">Necessary Fixes</h3>
+            <p style = "color: rgb(84, 52, 45);">Players are able to successfully join after entering the Join Code on the screen. However, there are a few networking-related fixes 
+                that need to be made. For example, the timer in the top left corner is not synched between players. It begins as soon as a player joins, regardless of the presence of 
+                other players. Similarly, the ingredient GameObjects are not yet networked. Therefore, as a temporary work-around to ensure all elements of gameplay are still functional, 
+                the player can click on the title of the ingredient they need above the four counter-baskets to make it appear.</p>
 
             <h2 style = "color: rgb(84, 52, 45);">Credits</h2>
             <h3 style = "color: rgb(84, 52, 45);">3D Models</h3>
